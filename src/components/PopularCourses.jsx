@@ -1,4 +1,3 @@
-// src/components/PopularCourses.jsx
 import React from 'react';
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 
@@ -93,7 +92,6 @@ const PopularCourses = () => {
           ))}
         </Row>
 
-        {/* Navigation Dots & Arrows (Decorative) */}
         <div className="d-flex justify-content-center align-items-center gap-3 mt-5">
           <div className="d-flex gap-2">
             <div className="rounded-circle bg-success" style={{ width: '10px', height: '10px' }}></div>

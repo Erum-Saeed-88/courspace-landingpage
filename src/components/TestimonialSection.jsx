@@ -1,4 +1,3 @@
-// src/components/Testimonial.jsx
 import React from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
 
@@ -8,7 +7,7 @@ const TestimonialSection = () => {
       <Container>
         <Row className="align-items-center g-5">
           
-          {/* Left Content */}
+  
           <Col lg={7}>
             <div className="pe-lg-5">
               <h2 className="display-4 fw-bold mb-2">
@@ -34,7 +33,7 @@ const TestimonialSection = () => {
                 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
               </p>
 
-              {/* Student Info */}
+              
               <div className="d-flex align-items-center gap-3">
                 <div 
                   className="rounded-circle overflow-hidden border border-2 border-white shadow"
@@ -55,7 +54,6 @@ const TestimonialSection = () => {
             </div>
           </Col>
 
-          {/* Right Side - Image with Clip-Path */}
           <Col lg={5}>
             <div className="position-relative d-flex justify-content-center">
               <div 
@@ -79,7 +77,6 @@ const TestimonialSection = () => {
                 />
               </div>
 
-              {/* Decorative Background Shape */}
               <div 
                 className="position-absolute rounded-circle"
                 style={{

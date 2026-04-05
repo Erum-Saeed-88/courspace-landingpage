@@ -1,4 +1,3 @@
-// src/components/Footer.jsx
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
@@ -9,7 +8,7 @@ const Footer = () => {
       <Container>
         <Row className="gy-5">
           
-          {/* Left Column - Coursespace Info */}
+        
           <Col lg={5} md={6}>
             <h2 className="fw-bold fs-3 mb-3">Coursespace</h2>
             <p className="lead opacity-90" style={{ maxWidth: '380px' }}>

@@ -1,4 +1,3 @@
-// src/components/Newsletter.jsx
 import React, { useState } from 'react';
 import { Container, Row, Col, Form, Button } from 'react-bootstrap';
 
@@ -10,9 +9,8 @@ const Newsletter = () => {
     e.preventDefault();
     if (email.trim()) {
       setSubscribed(true);
-      // Yahan API call kar sakte ho future mein
       setTimeout(() => {
-        alert('Thank you for subscribing! 🎉');
+        alert('Thank you for subscribing!');
         setEmail('');
         setSubscribed(false);
       }, 800);

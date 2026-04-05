@@ -1,4 +1,3 @@
-// src/components/LearningEnjoyable.jsx
 import React from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
 
@@ -35,11 +34,9 @@ const LearningEnjoyable = () => {
       <Container>
         <Row className="align-items-center g-5">
           
-          {/* Left Side - Image + Overlays */}
           <Col lg={5}>
             <div className="position-relative">
               
-              {/* Main Girl Image with Clip-Path */}
               <div 
                 className="shadow-lg overflow-hidden"
                 style={{ 
@@ -58,7 +55,6 @@ const LearningEnjoyable = () => {
                 />
               </div>
 
-              {/* Skills Card (Top Right) - Same as image */}
               <Card 
                 className="position-absolute shadow border-0"
                 style={{
@@ -101,7 +97,6 @@ const LearningEnjoyable = () => {
                 </Card.Body>
               </Card>
 
-              {/* Progress Circle (Bottom Left) */}
               <Card 
                 className="position-absolute shadow border-0 p-3"
                 style={{
@@ -142,7 +137,7 @@ const LearningEnjoyable = () => {
             </div>
           </Col>
 
-          {/* Right Side - Content */}
+      
           <Col lg={7}>
             <div className="ps-lg-4">
               <h2 className="display-4 fw-bold mb-3">
