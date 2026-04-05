@@ -65,6 +65,8 @@ export default Home;*/
 // src/pages/Home.jsx
 import React from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
+import homeImage from '../assets/home-hero.png';
+import { FaPlay } from "react-icons/fa";
 
 const Home = () => {
   return (
@@ -103,7 +105,7 @@ const Home = () => {
                   size="lg" 
                   className="px-5 py-3 d-flex align-items-center gap-2 rounded-3"
                 >
-                  <span>▶</span> Watch Video
+                  <span><FaPlay /></span> Watch Video
                 </Button>
               </div>
 
@@ -115,7 +117,7 @@ const Home = () => {
           <Col lg={5} className="text-center">
             <div className="position-relative">
               <img 
-                src="https://coursespace.vercel.app/_next/image?url=%2Fimages%2Fhome-hero.jpg&w=1920&q=75" 
+                src={homeImage}
                 alt="Student with books"
                 className="img-fluid rounded-4 shadow"
                 style={{ 

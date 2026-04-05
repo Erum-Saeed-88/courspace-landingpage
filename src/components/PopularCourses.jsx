@@ -42,7 +42,7 @@ const PopularCourses = () => {
     <section className="py-5 bg-light">
       <Container>
         <div className="text-center mb-5">
-          <h2 className="display-5 fw-bold">Most Popular Courses</h2>
+          <h2 className="display-5 fw-bold">Most Popular <span className='text-warning'>Courses</span></h2>
         </div>
 
         <Row className="g-4">
@@ -113,3 +113,177 @@ const PopularCourses = () => {
 };
 
 export default PopularCourses;
+
+
+
+
+
+
+
+
+/*import Carousel from 'react-bootstrap/Carousel';
+import ExampleCarouselImage from 'components/ExampleCarouselImage';
+
+function UncontrolledExample() {
+  return (
+    <Carousel>
+      <Carousel.Item>
+      <carousal.caption>
+        <Row className="g-4">
+          {courses.map((course) => (
+            <Col lg={4} md={6} key={course.id}>
+              <Card className="h-100 border-0 shadow-sm rounded-4 overflow-hidden hover-card">
+                <div style={{ height: '220px', overflow: 'hidden' }}>
+                  <Card.Img 
+                    variant="top" 
+                    src={course.image} 
+                    style={{ 
+                      height: '100%', 
+                      objectFit: 'cover',
+                      transition: 'transform 0.4s ease'
+                    }}
+                    className="hover-zoom"
+                  />
+                </div>
+
+                <Card.Body className="p-4 d-flex flex-column">
+                  <Card.Title className="fw-semibold mb-3" style={{ fontSize: '1.1rem', lineHeight: '1.4' }}>
+                    {course.title}
+                  </Card.Title>
+
+                  <div className="d-flex align-items-center gap-2 mb-3">
+                    <div>{renderStars(course.rating)}</div>
+                    <span className="text-muted small">({course.reviews})</span>
+                  </div>
+
+                  <div className="mt-auto d-flex justify-content-between align-items-center">
+                    <div>
+                      <span className="fw-bold fs-5 text-success">${course.price}</span>
+                      <span className="text-muted"> / course</span>
+                    </div>
+                    
+                    <Button 
+                      variant="link" 
+                      className="text-dark fw-medium d-flex align-items-center gap-1 p-0"
+                      style={{ textDecoration: 'none' }}
+                    >
+                      View Course 
+                      <span style={{ fontSize: '1.3rem', lineHeight: '1' }}>→</span>
+                    </Button>
+                  </div>
+                </Card.Body>
+              </Card>
+            </Col>
+          ))}
+        </Row>
+        </Carousel.Caption>
+      </Carousel.Item>
+
+      <Carousel.Item>
+        <Carousel.Caption>
+          <Row className="g-4">
+          {courses.map((course) => (
+            <Col lg={4} md={6} key={course.id}>
+              <Card className="h-100 border-0 shadow-sm rounded-4 overflow-hidden hover-card">
+                <div style={{ height: '220px', overflow: 'hidden' }}>
+                  <Card.Img 
+                    variant="top" 
+                    src={course.image} 
+                    style={{ 
+                      height: '100%', 
+                      objectFit: 'cover',
+                      transition: 'transform 0.4s ease'
+                    }}
+                    className="hover-zoom"
+                  />
+                </div>
+
+                <Card.Body className="p-4 d-flex flex-column">
+                  <Card.Title className="fw-semibold mb-3" style={{ fontSize: '1.1rem', lineHeight: '1.4' }}>
+                    {course.title}
+                  </Card.Title>
+
+                  <div className="d-flex align-items-center gap-2 mb-3">
+                    <div>{renderStars(course.rating)}</div>
+                    <span className="text-muted small">({course.reviews})</span>
+                  </div>
+
+                  <div className="mt-auto d-flex justify-content-between align-items-center">
+                    <div>
+                      <span className="fw-bold fs-5 text-success">${course.price}</span>
+                      <span className="text-muted"> / course</span>
+                    </div>
+                    
+                    <Button 
+                      variant="link" 
+                      className="text-dark fw-medium d-flex align-items-center gap-1 p-0"
+                      style={{ textDecoration: 'none' }}
+                    >
+                      View Course 
+                      <span style={{ fontSize: '1.3rem', lineHeight: '1' }}>→</span>
+                    </Button>
+                  </div>
+                </Card.Body>
+              </Card>
+            </Col>
+          ))}
+        </Row>
+        </Carousel.Caption>
+      </Carousel.Item>
+
+      <Carousel.Item>
+        <Carousel.Caption>
+          <Row className="g-4">
+          {courses.map((course) => (
+            <Col lg={4} md={6} key={course.id}>
+              <Card className="h-100 border-0 shadow-sm rounded-4 overflow-hidden hover-card">
+                <div style={{ height: '220px', overflow: 'hidden' }}>
+                  <Card.Img 
+                    variant="top" 
+                    src={course.image} 
+                    style={{ 
+                      height: '100%', 
+                      objectFit: 'cover',
+                      transition: 'transform 0.4s ease'
+                    }}
+                    className="hover-zoom"
+                  />
+                </div>
+
+                <Card.Body className="p-4 d-flex flex-column">
+                  <Card.Title className="fw-semibold mb-3" style={{ fontSize: '1.1rem', lineHeight: '1.4' }}>
+                    {course.title}
+                  </Card.Title>
+
+                  <div className="d-flex align-items-center gap-2 mb-3">
+                    <div>{renderStars(course.rating)}</div>
+                    <span className="text-muted small">({course.reviews})</span>
+                  </div>
+
+                  <div className="mt-auto d-flex justify-content-between align-items-center">
+                    <div>
+                      <span className="fw-bold fs-5 text-success">${course.price}</span>
+                      <span className="text-muted"> / course</span>
+                    </div>
+                    
+                    <Button 
+                      variant="link" 
+                      className="text-dark fw-medium d-flex align-items-center gap-1 p-0"
+                      style={{ textDecoration: 'none' }}
+                    >
+                      View Course 
+                      <span style={{ fontSize: '1.3rem', lineHeight: '1' }}>→</span>
+                    </Button>
+                  </div>
+                </Card.Body>
+              </Card>
+            </Col>
+          ))}
+        </Row>
+        </Carousel.Caption>
+      </Carousel.Item>
+    </Carousel>
+  );
+}
+
+export default UncontrolledExample;*/

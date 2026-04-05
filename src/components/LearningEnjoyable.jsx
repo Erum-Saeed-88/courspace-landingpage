@@ -48,7 +48,7 @@ const LearningEnjoyable = () => {
                 }}
               >
                 <img
-                  src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=800"
+                  src="https://coursespace.vercel.app/_next/image?url=%2Fimages%2Fhome-feature.png&w=1920&q=97"
                   alt="Happy Student"
                   className="img-fluid w-100"
                   style={{ 
@@ -77,7 +77,7 @@ const LearningEnjoyable = () => {
                       <small>90%</small>
                     </div>
                     <div className="progress" style={{ height: '6px' }}>
-                      <div className="progress-bar bg-primary" style={{ width: '90%' }}></div>
+                      <div className="progress-bar bg-warning" style={{ width: '90%' }}></div>
                     </div>
                   </div>
                   <div className="mb-3">
@@ -146,7 +146,7 @@ const LearningEnjoyable = () => {
           <Col lg={7}>
             <div className="ps-lg-4">
               <h2 className="display-4 fw-bold mb-3">
-                Make your Learning <span style={{ color: '#f59e0b' }}>Enjoyable</span>
+                Make your <span className='text-success'>Learning</span> <span style={{ color: '#f59e0b' }}>Enjoyable</span>
               </h2>
               
               <p className="lead text-muted mb-5" style={{ maxWidth: '520px' }}>

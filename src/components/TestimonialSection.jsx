@@ -12,7 +12,7 @@ const TestimonialSection = () => {
           <Col lg={7}>
             <div className="pe-lg-5">
               <h2 className="display-4 fw-bold mb-2">
-                Testimonial What our <span style={{ color: '#0ea5e9' }}>Students Say</span>
+                Testimonial What our <span className='text-success'>Students Say</span>
               </h2>
               
               <div className="mb-4">
@@ -69,7 +69,7 @@ const TestimonialSection = () => {
                 }}
               >
                 <img 
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800" 
+                  src="https://coursespace.vercel.app/_next/image?url=%2Fimages%2Fhome-testimonial.png&w=1080&q=97" 
                   alt="Student Testimonial"
                   className="img-fluid w-100"
                   style={{ 

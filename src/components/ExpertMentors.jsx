@@ -37,7 +37,7 @@ const ExpertMentors = () => {
     <section className="py-5 bg-light">
       <Container>
         <div className="text-center mb-5">
-          <h2 className="display-5 fw-bold">Our Expert Mentors</h2>
+          <h2 className="display-5 fw-bold">Our Expert <span className='text-warning'>Mentors</span></h2>
         </div>
 
         <Carousel 

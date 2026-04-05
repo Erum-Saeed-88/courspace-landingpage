@@ -9,7 +9,7 @@ const Navbar = () => {
       <Container>
         {/* Logo */}
         <BootstrapNavbar.Brand as={Link} to="/" className="fw-bold fs-3 text-success">
-          Course<span className='text-warning'>S</span>pace
+        <span className='text-warning'>C</span>ourse<span className='text-warning'>S</span>pace
         </BootstrapNavbar.Brand>
 
         <BootstrapNavbar.Toggle aria-controls="basic-navbar-nav" />
@@ -40,7 +40,7 @@ const Navbar = () => {
               className="px-4 fw-bold"
             >
               Sign Up
-            </Button>
+            </Button> 
           </div>
         </BootstrapNavbar.Collapse>
       </Container>
